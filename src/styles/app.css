@@ -15,7 +15,6 @@ body {
   height: 100%;
   background-color: #F2F1E8;
   margin: 0 auto;
-
 }
 
 
@@ -26,60 +25,54 @@ body {
   border-bottom: 2px solid gray;
   position: fixed;
   line-height: 50px;
-
-
 }
+
 .mainnav {
   margin: 0px auto;
   text-align: center;
   font-size: 18px;
   font-family: 'Roboto', sans-serif;
   word-spacing: 30px;
-  text-align: center;
-  
-  
+  text-align: center;  
 }
-
-
 
 .link {
   text-transform: uppercase;
   font-size: 18px;
   word-spacing: 10px;
   text-align: center;
-}
-
-.link {
+  color: pink;
+  padding: 10px;
+  text-decoration: none;
+  text-align: center;
   color: #2B2F26;
-}
-
-.link:active {
-  color: #999966;
-}
-
-.link:visted{
-  color: #2B2F26 ;
 }
 
 .link:hover {
   color: #CD5D67;
 }
 
-.link:link  {
+.link:active {
+  color: #999966;
+  text-decoration: underline;
+}
+
+a {
+  color: #2B2F26 ;
+}
+
+a:link  {
   color: #968772;
 }
 
-.link:visted {
+a:visted {
   color: #968772;
 }
 
-.link:hover {
+a:hover {
   color: #967343;
 }
 
-.home .navhome, .about .navabout, .newsletter .navnewsletter {
-  color: #999966;
-}
 
 .logo {
   background-image: url(/images/bent-creek-logo.png);
@@ -112,7 +105,17 @@ footer {
   color: #F2F1E8;
   font-size: 14px;
   padding: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
 
+
+}
+
+.footLinks > a > img {
+  width: 50px;
+  padding: 0px 5px 0px 5px;
+  text-align: center;
 }
 
 
@@ -131,9 +134,35 @@ footer {
 
 .mainWelcome {
   margin: 0 auto;
+  width: 1000px;
+  height: 100%;
   text-align: center;
-  padding-bottom: 60px;
+  color: white;
+  background-image: url(/images/product-1.jpg);
+  background-size: 1000px 750px;
+  background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
 }
+
+.mainWelcome > h1 {
+  font-size: 148px;
+  margin-top: -50px;
+}
+
+.spanTint {
+   color: #F2F1E8; 
+    font-size: 24px; 
+    background: rgb(0, 0, 0); /* fallback color */
+    background: rgba(0, 0, 0, 0.7); 
+    padding: 10px;
+    margin-top: -100px;
+
+}
+
+
 
 h1 {
   text-align: center;
@@ -345,17 +374,7 @@ h1 {
   padding-top: 85px;
 }
 
-.about .intro a {
-  color: #968772;
-}
 
-.about .intro a:visted {
-  color: #968772;
-}
-
-.about .intro a:hover {
-  color: #967343 ;
-}
 
 
 .intro {
@@ -472,14 +491,14 @@ tr:nth-child(even) {
 
 .compNews {
   width: 1000px;
-  height: 100%;
-  margin: 0 auto;
+  height: 100%; 
   background-color: #F2F1E8;
   font-family: 'Roboto', serif;
+  margin: 0 auto;
 }
 
 form > h1  {
-  font-size: 24px;
+  font-size: 28px;
 }
 
 
@@ -487,38 +506,33 @@ form > h1  {
   background-image: url(/images/background-2.jpg);
   background-size: cover;
   width: 1000px;
-  height: 500px;
-  margin: 0 auto;
+  height: 100%;
+  margin: 1px auto;
+}
+
+
+.socialMedia {
+  display: flex;
+  justify-content: space-around;
+  margin: 15px;
+
 }
 
 .signupform {
-  width: 600px;
+  width: 700px;
   height: 100%;
-  margin: 0 auto;
+  margin: 5px auto;
+  background: white;
   text-align: center;
+  border: 2px solid #968772;
+  border-radius: 5px;
 
 }
 
 form {
-  width: 550px;
-  height: 375px;
-  background: white;
-  border: 2px solid #968772;
-  margin: 0 auto;
-  text-align: center;
-  padding: 20px;
-  border-radius: 5px;
-  -webkit-transition: padding 2s;
+  padding: 10px;
 }
 
-
-
-
-form:hover {
-  padding: 20px;
-    border-radius: 15px;
-   -webkit-transition: border-radius 2s;
-}
 
 #nameInput {
   width: 450px;
@@ -538,8 +552,18 @@ form:hover {
   font-size: 18px;
 }
 
+
+.comments {
+  width: 450px;
+  height: 60px;
+  border: hidden;
+  border-bottom: 2px solid #968772;
+  font-family: 'Roboto', serif;
+  font-size: 18px;
+}
+
 #signupButton {
-  width: 125px;
+  width: 150px;
   height: 50px;
   background: #968772;
   font-family: 'Roboto', serif;
@@ -556,6 +580,28 @@ form:hover {
     border-radius: 15px;
    -webkit-transition: border-radius 2s;
 }
+
+
+.commentSection {
+  margin: 10px auto;
+  width: 680px;
+  height: 100%;
+  background-color: white;
+  padding: 10px;
+  border: 2px solid #968772;
+  border-radius: 5px;
+
+}
+
+.aComment {
+  border: 2px solid #968772;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 5px;
+}
+
+
+
 
 
 

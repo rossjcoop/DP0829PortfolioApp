@@ -6,13 +6,12 @@ import '../styles/app.css';
 
 
 export default class About extends Component {
+  
+  componentWillMount() {
+    window.scrollTo(0, 0)
+  }
+
   render() {
-
-  	let picSizing = {
-      "height": "700px",
-      "width": "1000px"
-    }
-
 
     return (
       <div className="compBody">
@@ -21,13 +20,13 @@ export default class About extends Component {
           <h2>Where Art Meets Nature.</h2>
         </div>
         <div className="container">
-        	<div className="homeImg">
-        		<img src ="/images/product-1.jpg" style={picSizing}/>
-        	</div>
         	<div className="mainWelcome">
         		<h1>Welcome!</h1>
-        		<h3>View Our Portfolio</h3>
-        		<Link to="/Portfolio"><button id="signupButton">Go!</button></Link>
+            <div className="spanTint">
+            <span>We are a pottery studio in the heart of the Downtown Las Vegas Arts District providing a space to grow your passion of pottery.</span>
+            </div>
+            <br />
+            <Link to="/About"><button id="signupButton">Learn more!</button></Link>
         	</div>
         </div>       
       </div>

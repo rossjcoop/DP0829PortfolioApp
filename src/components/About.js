@@ -10,6 +10,9 @@ import '../styles/app.css';
 
 
 export default class About extends Component {
+  componentWillMount() {
+  	window.scrollTo(0, 0)
+  }
   render() {
 
     return (
